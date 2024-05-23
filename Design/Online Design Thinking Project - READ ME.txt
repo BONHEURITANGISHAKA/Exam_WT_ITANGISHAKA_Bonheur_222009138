@@ -1,0 +1,160 @@
+Online Design Thinking Project - README
+
+Username: Bonheur Itangishaka
+Password: 123
+
+Welcome to the Online Design Thinking Project! This project provides a comprehensive platform for learning and collaboration in design thinking, featuring structured courses, interactive qwiz, and various resources. Below is an overview of the project's structure and functionality.
+
+Table of Contents
+
+1.Database Structure
+2.Website Structure
+3.Functionality
+4.Usage
+5.Conclusion
+
+1.Database Structure
+
+Users Table
+id: Primary Key
+name: String
+email: String
+password: String
+role: Enum (student, instructor)
+
+Instructors Table
+id: Primary Key
+user_id: Foreign Key
+bio: Text
+
+Courses Table
+id: Primary Key
+title: String
+description: Text
+instructor_id: Foreign Key
+
+Enrollment Table
+id: Primary Key
+course_id: Foreign Key
+student_id: Foreign Key
+
+Resources Table
+id: Primary Key
+course_id: Foreign Key
+type: Enum (pdf, video, link)
+url: String
+
+Discussions Table
+id: Primary Key
+course_id: Foreign Key
+user_id: Foreign Key
+content: Text
+
+Feedback Table
+id: Primary Key
+course_id: Foreign Key
+user_id: Foreign Key
+rating: Integer
+comments: Text
+
+Progress Table
+id: Primary Key
+course_id: Foreign Key
+student_id: Foreign Key
+milestone: String
+status: Enum (completed, in-progress)
+
+Quiz Table
+id: Primary Key
+course_id: Foreign Key
+questions: JSON
+
+Certificate Table
+id: Primary Key
+course_id: Foreign Key
+student_id: Foreign Key
+issued_at: DateTime
+Database Credentials
+
+2.Website Structure
+
+Homepage
+Provides an overview of the website and options for users to explore courses and resources.
+
+User Page
+Allows users to register, login, and manage their profile.
+
+Course Page
+Displays a list of available courses and allows users to select courses they want to enroll in.
+
+Resource Page
+Shows a list of resources related to each course.
+
+Discussion Page
+Manages course-specific discussion forums.
+
+Feedback Page
+Allows users to provide feedback on courses.
+
+Progress Page
+Displays user progress through enrolled courses.
+
+Quiz Page
+Manages quizzes for each course.
+
+Certificate Page
+Manages course completion certificates.
+
+3.Functionality
+User Registration/Login
+Registration: Users can register by providing necessary details like name, email, and password.
+Login: Existing users can log in using their credentials.
+Profile Management
+Users can update their profile information, including preferences and contact details.
+Course Management
+Course Browsing: Users can browse through the list of courses available on the website.
+Course Enrollment: Users can enroll in courses, which will lead them to the resource and activity pages.
+Resource Access
+Users can access various resources related to their enrolled courses, such as PDFs, videos, and links.
+Discussion Forums
+Users can participate in course-specific discussion forums to engage with instructors and peers.
+Feedback Provision
+Users can provide feedback on courses to help instructors improve the content and delivery.
+Progress Tracking
+Users can track their progress through courses, view milestones, and see completion indicators.
+Quiz Management
+Instructors can create quizzes, and students can take and submit quizzes for evaluation.
+Certificate Issuance
+Upon course completion, students receive certificates which can be viewed and managed on the certificate page.
+
+4.Usage
+
+Registration/Login
+New Users: Register on the website by providing your details.
+Existing Users: Log in using your registered email and password.
+Profile Management
+After logging in, update your profile information by navigating to the profile page.
+Course Enrollment
+Browse through the list of courses on the course page and select the ones you want to enroll in.
+Resource Access
+Access course materials by navigating to the resource page of your enrolled courses.
+Discussion Participation
+Join course-specific discussions on the discussion page to interact with peers and instructors.
+Feedback Provision
+Provide feedback on courses by navigating to the feedback page.
+Progress Tracking
+Monitor your progress through courses on the progress page.
+Quiz Management
+Take quizzes related to your courses on the quiz page.
+Certificate Issuance
+View and manage your course completion certificates on the certificate page.
+
+5.Conclusion
+
+This project aims to provide a user-friendly platform for learning and collaboration in design thinking. Through proper registration, profile management, course browsing, resource access, and interactive discussions, users can enhance their learning experience. The platform also ensures that user interactions are tracked to improve the overall application experience and provide personalized recommendations.
+
+
+
+
+
+

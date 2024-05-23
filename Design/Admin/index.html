@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Tourist Connect - Home</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('designs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Add flex display to ul */
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 10px; /* Adjust margin between navigation items */
+    }
+
+    ul li:last-child {
+        margin-right: 0; /* Remove margin from the last navigation item */
+    }
+
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px; /* Adjust padding to reduce space */
+        transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+        background-color: #555;
+        color: #ffcc00;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 110px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: orange;
+    }
+
+    section#home {
+        text-align: center;
+    }
+
+    section#home h1, section#home h2 {
+        font-size: 40px;
+    }
+
+    section#home p {
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        margin-top: auto;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover, ul li a:hover {
+        text-decoration: underline;
+        color: #ffcc00;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <p>DT</p>
+        </div>
+        <ul>
+            <!-- Corrected file extensions and paths -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Users.php">Users</a></li>
+            <li><a href="Instructor.php">Instructor</a></li>
+            <li><a href="Course.php">Course</a></li>
+            <li><a href="enlollement.php">Enrollment</a></li>
+            <li><a href="Resources.php">Resource</a></li>
+            <li><a href="Discussion.php">Discussion</a></li>
+            <li><a href="Feedback.php">Feedback</a></li>
+            <li><a href="Progress.php">Progress</a></li>
+            <li><a href="Qwiz.php">Quiz</a></li>
+            <li><a href="Certificate.php">Certificate</a></li>
+            <li class="dropdown">
+                <a href="#">Settings</a>
+                <div class="dropdown-content">
+                    <a href="logout.php">Log out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <marquee><h1> Welcome to Online Design Thinking Platform</h1></marquee>
+    <p>Explore Your Learning Here <i><b> Design Thinking</b></i></p>
+    <h2>Online Design Thinking Platform</h2>
+    <p>Our online Design thinking  platform uses design thinking to make learning engaging and effective. We start by understanding your needs and experiences, ensuring that the courses are practical and useful. You will create and test ideas through interactive activities, helping you learn by doing. This method combines clear thinking with creativity, making it easy to solve problems and come up with new ideas. Join us to explore and innovate, turning every challenge into a learning opportunity.</p>
+</section>
+
+<main>
+
+</main>
+
+<footer>
+    <p>© 2024 DESIGN THINKING. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
